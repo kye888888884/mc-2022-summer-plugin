@@ -1,0 +1,53 @@
+name: kyhplugin
+version: '${project.version}'
+main: kyh.kyhplugin2
+api-version: 1.16
+
+commands:
+  setspawn:
+    description: "스폰 지점을 설정합니다."
+    usage: /<command>
+    aliases:
+      - 스폰설정
+      - 셋스폰
+  spawn:
+    description: "스폰 지점으로 이동합니다."
+    usage: /<command>
+    aliases:
+      - 스폰
+  feed:
+    description: "배부름을 설정합니다. 값을 입력하지 않으면 최대치로 설정합니다."
+    usage: /<command> [대상] [값(max:20)]
+    aliases:
+      - full
+      - 포만
+  name:
+    description: "표시되는 이름을 변경합니다. 표시될 이름을 입력하지 않으면 기본값으로 설정합니다. 다른 플레이어의 이름은 콘솔에서만 변경할 수 있습니다. (이름 최대 길이: 20)"
+    usage: /<command> [표시될 이름] [대상(콘솔 전용)]
+    aliases:
+      - 이름
+  home:
+    description: "집으로 이동합니다. 이름을 입력하지 않으면 기본값(default)로 이동합니다."
+    usage: /<command> [집 이름]
+    aliases:
+      - 집
+      - 홈
+  sethome:
+    description: "집을 설정합니다. 이름을 입력하지 않으면 기본값(default)로 설정합니다."
+    usage: /<command> [집 이름]
+    aliases:
+      - 집설정
+      - 셋홈
+      - 홈설정
+  warp:
+    description: "이동할 장소를 선택합니다."
+    usage: /<command>
+    aliases:
+      - 워프
+      - 이동
+  money:
+    description: "돈을 관리합니다."
+    usage: /<command> [see(보기)|set(설정)|add(더하기/빼기)|list(목록)|send(보내기)]
+  npc:
+    description: "NPC를 관리합니다."
+    usage: /<command> [create]
